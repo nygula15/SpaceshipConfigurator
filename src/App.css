@@ -1,0 +1,137 @@
+.Desktop {
+  position: absolute;
+  height: 1024px;
+  width: 1440px;
+  padding: 32px 248px;
+  border-radius: 0px;
+  background-color: #8d97b6;
+}
+
+.container {
+  height: 848px;
+  width: 944px;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  border: 1px solid #7BF762;
+  border-radius: 8px;
+  
+}
+.header1 {
+  position: absolute;
+  width: 944px;
+  height: 27px;
+  padding-top: 40px;
+
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.2em;
+
+  color: #7BF762;
+}
+.colorCard{
+  backgroundColor: 'rgba(52, 52, 52, 0.8)';
+  height: 112px;
+  width: 160px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  border: 1px solid #7BF762;
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.powerWarp{
+  height: 64px;
+  width: 160px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  border: 1px solid #7BF762;
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.optionPackage{
+  height: 192px;
+  width: 160px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  border: 1px solid #7BF762;
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.total{
+  position: absolute;
+  width: 304px;
+  height: 240px;
+  left: 856px;
+  top: 176px;
+
+  background: #1C3C16;
+  border: 1px solid #7BF762;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2em;
+  
+  color: #7BF762;
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
