@@ -3,15 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 
 function App() {
-  const [count, setCount] = useState(4)
-
-  function decrementCount() {
-    setCount(count - 1)
-  }
-
-  function incrementCount() {
-    setCount(count + 1)
-  }
 
   const [color1, setColor] = useState(0)
   const [power1, setPower] = useState(0)
@@ -177,9 +168,6 @@ function App() {
                   <div>{color1 + power1 + warp1 + option1 + 1000}€</div>
                 </div>
                 <div>
-              <button onClick={decrementCount}>-</button>
-              <span>{count}</span>
-              <button onClick={incrementCount}>+</button>
             </div>
               </div>              
             </div>
