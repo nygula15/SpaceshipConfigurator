@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function App() {
 
@@ -17,163 +18,122 @@ function App() {
   return (
     <div className="App">
       <div className="Desktop">
-      <div class="container">
-        <div class="row">
-        
-          <div class="col">
-            <div className="header1">Spaceship configurator</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-8">
-            <div class="row">
+      <Container className="Container">
+
+          <Col align="center">
+            <div>Spaceship configurator</div>
+          </Col>
+
+        <Row>
+          <Col xs={8}>
+            <Row>
               <div>Select color:</div>
-              <div class="col">
-                <div class="btn" onClick={() => setColor(colorValue[0])}>
-                  <div className="colorCard">
-                    <svg width="64" height="32" viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="64" height="32" rx="8" fill="white"/>
-                    </svg>
-                    <div>+{colorValue[0]}€</div>
-                    White
-                  </div>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setColor(colorValue[0])} className="buttonClick Short">
+                  <div className="rectangle" style={{background: '#ffffff'}}> </div>
+                  <div>+{colorValue[0]}€</div>
+                  <div>Snow</div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="btn" onClick={() => setColor(colorValue[1])}>
-                  <div className="colorCard">
-                    <svg width="64" height="32" viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="64" height="32" rx="8" fill="#FF7A00"/>
-                    </svg>
-                    <div>+{colorValue[1]}€</div>
-                    Volcano
-                  </div>
+              </Col>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setColor(colorValue[1])} className="buttonClick Short" >
+                  <div className="rectangle" style={{background: "#FF7A00"}}> </div>
+                  <div>+{colorValue[1]}€</div>
+                  <div>Volcano</div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="btn" onClick={() => setColor(colorValue[2])}>
-                  <div className="colorCard">
-                    <svg width="64" height="32" viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="64" height="32" rx="8" fill="#6BE4FF"/>
-                    </svg>
-                    <div>+{colorValue[2]}€</div>
-                    Sky
-                  </div>
+              </Col>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setColor(colorValue[2])} className="buttonClick Short">
+                  <div className="rectangle" style={{background: "#6BE4FF"}}> </div>
+                  <div>+{colorValue[2]}€</div>
+                  <div>Sky</div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
+              </Col>
+            </Row>
+            <Row>
               <div>Select power:</div>
-              <div class="col">
-                <div class="btn" onClick={() => setPower(powerValue[0])}>
-                  <div className="powerWarp">
-                    <div>100 MW</div>
-                    +{powerValue[0]}€
-                  </div>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setPower(powerValue[0])} className="buttonClick Short">
+                  <div>100 MW</div>
+                  +{powerValue[0]}€
                 </div>
-              </div>
-              <div class="col">
-                <div class="btn" onClick={() => setPower(powerValue[1])}>
-                  <div className="powerWarp">
-                    <div>150 MW</div>
-                    +{powerValue[1]}€
-                  </div>
+              </Col>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setPower(powerValue[1])} className="buttonClick Short">
+                  <div>150 MW</div>
+                  +{powerValue[1]}€
                 </div>
-              </div>
-              <div class="col">
-                <div class="btn" onClick={() => setPower(powerValue[2])}>
-                  <div className="powerWarp">
-                    <div>200 MW</div>
-                    +{powerValue[2]}€
-                  </div>
+              </Col>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setPower(powerValue[2])} className="buttonClick Short">
+                  <div>200 MW</div>
+                  +{powerValue[2]}€
                 </div>
-              </div>
-            </div>
-            <div class="row">
+              </Col>
+            </Row>
+            <Row>
               <div>Warp Drive:</div>
-              <div class="col-4">
-                <div class="btn" onClick={() => setWarp(warpValue[0])}>
-                  <div className="powerWarp">
-                    <div>NO</div>
-                    +{warpValue[0]}€
-                  </div>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setWarp(warpValue[0])} className="buttonClick Short">
+                  <div>NO</div>
+                  +{warpValue[0]}€
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="btn" onClick={() => setWarp(warpValue[1])}>
-                  <div className="powerWarp">
-                    <div>YES</div>
-                    +{warpValue[1]}€
-                  </div>
+              </Col>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setWarp(warpValue[1])} className="buttonClick Short">
+                  <div>YES</div>
+                  +{warpValue[1]}€
                 </div>
-              </div>
-            </div>
-            <div class="row">
+              </Col>
+            </Row>
+            <Row>
               <div>Select option package:</div>
-              <div class="col">
-                <div class="btn" onClick={() => setOption(optionValue[0])}>
-                  <div className="optionPackage">
-                    <div>Basic</div>
-                    +{optionValue[0]}€
-                  </div>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setOption(optionValue[0])} className="buttonClick">
+                  <div>Basic</div>
+                  <span>+{optionValue[0]}€</span>
+                  <div className="Bottom">sdfghj</div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="btn" onClick={() => setOption(optionValue[1])}>
-                  <div className="optionPackage">
-                    <div>Sport</div>
-                    +{optionValue[1]}€
-                  </div>
+                
+              </Col>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setOption(optionValue[1])} className="buttonClick">
+                  <div>Sport</div>
+                  <span>+{optionValue[1]}€</span>
                 </div>
-              </div>
-              <div class="col">
-                <div class="btn" onClick={() => setOption(optionValue[2])}>
-                  <div className="optionPackage">
-                    <div>Lux</div>
-                    +{optionValue[2]}€
-                  </div>
+              </Col>
+              <Col xs={4}>
+                <div class="btn" onClick={() => setOption(optionValue[2])} className="buttonClick">
+                  <div>Lux</div>
+                  <span>+{optionValue[2]}€</span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div className="total">
-              <div class="row">
-                  <div class="col-8">
-                    <div>Base price:</div>
-                    <div>Color:</div>
-                    <div>Power:</div>
-                    <div>Warp drive:</div>
-                    <div>Option package:</div>
-                  </div>
-                  <div class="col">
-                    <div class="row">
-                      <div>1000€</div>
-                      <div>+{color1}€</div>
-                      <div>+{power1}€</div>
-                      <div>+{warp1}€</div>
-                      <div>+{option1}€</div>
-                      {/* <div>{setColor}</div>
-                      <div>{setPower}</div>
-                      <div>{setWarp}</div>
-                      <div>{setOption}</div> */}
-                    </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-8">
-                  <div>Total:</div>
-                </div>
-                <div class="col">
+              </Col>
+            </Row>
+          </Col>
+          <Col xs={4}>
+            <br/>
+            <div className="buttonClick Right">
+              <Row>
+                <Col xs={8}><div>Base price:</div></Col>
+                <Col xs={4}><div>1000€</div></Col>
+                <Col xs={8}><div>Color:</div></Col>
+                <Col xs={4}><div>+{color1}€</div></Col>
+                <Col xs={8}><div>Power:</div></Col>
+                <Col xs={4}><div>+{power1}€</div></Col>
+                <Col xs={8}><div>Warp drive:</div></Col>
+                <Col xs={4}><div>+{warp1}€</div></Col>
+                <Col xs={8}><div>Option package:</div></Col>
+                <Col xs={4}><div>+{option1}€</div></Col>
+                <hr style={{"border": "1px solid #7BF762"}}/>
+                <Col xs={8}><div>Total:</div></Col>
+                <Col xs={4}>
                   <div>{color1 + power1 + warp1 + option1 + 1000}€</div>
-                </div>
-                <div>
+                </Col>
+              </Row>              
             </div>
-              </div>              
-            </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
       </div>
     </div>
   );
